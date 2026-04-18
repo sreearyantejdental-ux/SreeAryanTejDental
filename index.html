@@ -13,7 +13,7 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -27,6 +27,29 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .birthday-scroll {
+            display: inline-block;
+            white-space: nowrap;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 8px #000;
+            animation: birthday-marquee 15s linear infinite;
+            will-change: transform;
+        }
+
+        @keyframes birthday-marquee {
+            0% {
+                transform: translateX(100vw);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -97,11 +120,10 @@
     <!-- Navbar End -->
     <!-- Carousel Start -->
     <!-- Birthday Banner Start (Remove this block after the birthday) -->
-    <div id="birthday-banner" style="display:none;">
-        <marquee behavior="scroll" direction="left" scrollamount="12"
-                 style="font-size:2.2rem; font-weight:bold; color:#fff; background:linear-gradient(90deg, #ff5e62, #ff9966, #f9d423, #a1ffce, #fbc2eb, #fad0c4); padding:18px 0; text-shadow:2px 2px 8px #000;">
-            🎉🎂 Happy Birthday Doctor Bava! 🎂🎉
-        </marquee>
+    <div id="birthday-banner" style="display:none; overflow:hidden; background:linear-gradient(90deg, #ff5e62, #ff9966, #f9d423, #a1ffce, #fbc2eb, #fad0c4); padding:18px 0;">
+        <div class="birthday-scroll">
+            🎉🎂 Happy Birthday Doctor Surya Theja Rentala! 🎂🎉
+        </div>
     </div>
     <!-- Birthday Banner End -->
     <div class="container-fluid p-0 mb-5">
