@@ -24,6 +24,13 @@ html, body {
     100% { transform: translateX(-100%); }
 }
 
+.topbar-scroll {
+    white-space: nowrap;
+    animation: scroll-left 30s linear infinite;
+    display: inline-block;
+    padding-left: 100vw;
+}
+
 h1,
 h2,
 .font-weight-bold {
