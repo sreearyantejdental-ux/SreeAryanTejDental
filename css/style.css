@@ -118,6 +118,16 @@ h6,
     transform: skew(40deg);
 }
 
+@media (max-width: 991.98px) {
+    .top-shape::before {
+        display: none;
+    }
+    .top-shape {
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+}
+
 .navbar-light .navbar-nav .nav-link {
     font-family: 'Jost', sans-serif;
     padding: 35px 15px;
