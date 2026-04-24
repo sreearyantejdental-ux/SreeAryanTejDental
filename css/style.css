@@ -1,9 +1,27 @@
 /********** Template CSS **********/
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 :root {
     --primary: #06A3DA;
     --secondary: #F57E57;
     --light: #EEF9FF;
     --dark: #091E3E;
+}
+
+.birthday-scroll {
+    white-space: nowrap;
+    animation: scroll-left 15s linear infinite;
+    display: inline-block;
+    padding-left: 100%;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
 h1,
@@ -143,6 +161,12 @@ h6,
     .carousel-caption h1 {
         font-size: 30px;
         font-weight: 600 !important;
+    }
+
+    .navbar-brand h1 {
+        font-size: 24px;
+        white-space: normal;
+        line-height: 1.2;
     }
 }
 
