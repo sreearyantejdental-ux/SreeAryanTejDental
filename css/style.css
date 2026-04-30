@@ -360,7 +360,14 @@ h6,
 @media (max-width: 576px) {
     .cta-phones {
         flex-direction: column;
-        gap: 10px;
+        gap: 6px;
+    }
+    .cta-phone-item {
+        font-size: 16px !important;
+    }
+    .cta-phones + .cta-phones,
+    .bg-primary.p-5 {
+        padding: 2rem !important;
     }
 }
 
